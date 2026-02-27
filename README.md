@@ -1,34 +1,39 @@
-# academic-ranking
+# Academic Ranking
 
-An Electron application with React and TypeScript
+Ứng dụng desktop dùng để quản lý và xếp hạng kết quả học tập, được xây dựng bằng Electron, React và TypeScript.
 
-## Recommended IDE Setup
+Ứng dụng cho phép nhập dữ liệu sinh viên, tính điểm trung bình (GPA) và tự động sắp xếp thứ hạng dựa trên kết quả học tập.
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+---
 
-## Project Setup
+## Tính năng
 
-### Install
+- Thêm, chỉnh sửa và xoá sinh viên
+- Tính điểm trung bình tự động
+- Xếp hạng sinh viên theo GPA
+- Giao diện desktop đa nền tảng (Windows, macOS, Linux)
+
+---
+
+## Công nghệ sử dụng
+
+- Electron
+- React
+- TypeScript
+- Node.js
+- ESLint
+- Prettier
+
+---
+
+## Yêu cầu môi trường
+
+- Node.js >= 16
+- npm >= 8
+
+---
+
+## Cài đặt
 
 ```bash
-$ npm install
-```
-
-### Development
-
-```bash
-$ npm run dev
-```
-
-### Build
-
-```bash
-# For windows
-$ npm run build:win
-
-# For macOS
-$ npm run build:mac
-
-# For Linux
-$ npm run build:linux
-```
+npm install
