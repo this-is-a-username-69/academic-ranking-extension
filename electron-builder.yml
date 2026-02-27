@@ -1,0 +1,33 @@
+appId: com.electron.app
+productName: Academic Ranking
+directories:
+  buildResources: build
+  output: dist
+files:
+  - out/**
+  - node_modules/**
+  - '!node_modules/.cache/**'
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.eslintcache,eslint.config.mjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
+  - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+asarUnpack:
+  - node_modules/better-sqlite3/**
+extraResources:
+  - from: src/main/database/migrations
+    to: migrations
+win:
+  executableName: academic-ranking
+nsis:
+  artifactName: ${name}-${version}-setup.${ext}
+  shortcutName: ${productName}
+  uninstallDisplayName: ${productName}
+  createDesktopShortcut: always
+npmRebuild: false
+publish:
+  provider: generic
+  url: https://example.com/auto-updates
+electronDownload:
+  mirror: https://github.com/electron/electron/releases/download/
