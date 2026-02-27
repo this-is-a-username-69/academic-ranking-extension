@@ -1,4 +1,4 @@
-# Academic Ranking
+# 🎓 Academic Ranking
 
 Ứng dụng desktop dùng để quản lý và xếp hạng kết quả học tập, được xây dựng bằng Electron, React và TypeScript.
 
@@ -6,12 +6,13 @@
 
 ---
 
-## Tính năng
+## 🚀 Giới thiệu
+**Academic Ranking** là một ứng dụng desktop chuyên dụng để theo dõi tiến độ học tập. Ứng dụng giúp đơn giản hóa việc quản lý dữ liệu điểm số và tự động hóa quy trình xếp hạng.
 
-- Thêm, chỉnh sửa và xoá sinh viên
-- Tính điểm trung bình tự động
-- Xếp hạng sinh viên theo GPA
-- Giao diện desktop đa nền tảng (Windows, macOS, Linux)
+### Tính năng chính:
+* **Quản lý sinh viên:** Nhập và lưu trữ thông tin dữ liệu sinh viên dễ dàng.
+* **Tính toán tự động:** Tự động tính điểm trung bình (GPA) chính xác.
+* **Xếp hạng thông minh:** Hệ thống tự động sắp xếp thứ hạng dựa trên kết quả học tập từ cao xuống thấp.
 
 ---
 
@@ -37,3 +38,41 @@
 
 ```bash
 npm install
+```
+
+## Chạy ở môi trường phát triển
+
+```bash
+npm run dev
+```
+
+##Build ứng dụng
+
+##Windows
+
+```bash
+npm run build:win
+```
+
+##Mac
+
+```bash
+npm run build:mac
+```
+
+##Linux
+
+```bash
+npm run build:linux
+```
+
+---
+
+## 📁 Cấu trúc thư mục
+Dự án được tổ chức theo cấu trúc chuẩn của Electron + React:
+
+```text
+src/
+├── main/       # Electron main process (Xử lý hệ thống)
+├── renderer/   # React UI (Giao diện người dùng)
+└── preload/    # Preload scripts (Cầu nối giữa Main và Renderer)
