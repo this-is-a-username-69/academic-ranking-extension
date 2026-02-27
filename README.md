@@ -76,3 +76,13 @@ src/
 ├── main/       # Electron main process (Xử lý hệ thống)
 ├── renderer/   # React UI (Giao diện người dùng)
 └── preload/    # Preload scripts (Cầu nối giữa Main và Renderer)
+```
+
+## Demo Accounts
+
+```text
+Super Admin: superadmin / admin123
+Admin (Thường): admin01 / admin456
+Teacher: teacher01 / teacher123
+Student: student01 / student123
+```
