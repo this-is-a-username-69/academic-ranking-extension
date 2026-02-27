@@ -84,5 +84,5 @@ src/
 Super Admin: superadmin / admin123
 Admin (Thường): admin01 / admin456
 Teacher: teacher01 / teacher123
-Student: student01 / student123
+Student: student01 / student123 || student02 / student123 || student03 / student123
 ```
